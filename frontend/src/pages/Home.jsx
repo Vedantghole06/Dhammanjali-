@@ -79,6 +79,31 @@ const Home = () => {
 
 
 
+    const cards = [
+        {
+            image: "/placeholder.svg?height=200&width=200",
+            alt: "Solar panels in a field",
+            title: "DHAMMANJALI Announces Grand Summer Sale with Up to 50% Off",
+        },
+        {
+            image: "/placeholder.svg?height=200&width=200",
+            alt: "Kitchen appliances collection",
+            title: "New Kitchen Appliances Collection Now Available at All Stores",
+        },
+        {
+            image: "/placeholder.svg?height=200&width=200",
+            alt: "Person doing yoga meditation",
+            title: "DHAMMANJALI Partners with Local Artisans to Launch Exclusive Handicraft Collection",
+        },
+        {
+            image: "/placeholder.svg?height=200&width=200",
+            alt: "Person wearing VR headset",
+            title: "DHAMMANJALI Announces Grand Summer Sale with Up to 50% Off",
+        },
+    ]
+
+
+
     return (
 
         <>
@@ -273,7 +298,7 @@ const Home = () => {
 
 
 
-            <div className="bg-[#8cbfe0] min-h-screen w-full py-10">
+            <section className="bg-[#8cbfe0] min-h-screen w-full py-10">
                 <div className="container mx-auto px-6 md:px-10 flex flex-col md:flex-row md:items-start">
                     {/* Left Column */}
                     <div className="w-full md:w-5/12 pr-0 md:pr-8">
@@ -293,12 +318,24 @@ const Home = () => {
                         </div>
 
                         <div className="mt-10">
-                            <div className="rounded-[40px] overflow-hidden w-full">
-                                <img
-                                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TbuVLDXjZzEWkRSV7y5ZCvbKSmgcIi.png"
-                                    alt="Business meeting with data charts"
-                                    className="w-full h-auto"
-                                />
+                            <div className="w-full relative">
+                                <div
+                                    className="relative overflow-hidden bg-white shadow-2xl"
+                                    style={{
+                                        borderRadius: '60% 40% 40% 60% / 60% 30% 70% 40%',
+                                        aspectRatio: '1',
+                                        maxWidth: '400px',
+                                        margin: '0 auto'
+                                    }}
+                                >
+                                    <div className="absolute inset-0 p-8 lg:p-12 flex items-center justify-center">
+                                        <img
+                                            src="/api/placeholder/400/400"
+                                            alt="MRI Scanner Medical Equipment"
+                                            className="w-full h-full object-cover rounded-3xl"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -338,7 +375,170 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+
+
+            <section className="min-h-screen p-6 md:p-8">
+                <div className="max-w-7xl mx-auto">
+                    {/* Header Section */}
+                    <div className="flex justify-between items-start mb-8">
+                        <div className="flex items-center gap-4">
+                            <h1 className="text-3xl font-bold text-gray-800 tracking-wide">ANNOUNCEMENTS</h1>
+                            <div className="flex items-center gap-3">
+                                <span className="text-xl text-gray-600">LATEST</span>
+                                <div className="hidden md:block ml-4">
+                                    <svg width="150" height="24" viewBox="0 0 150 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M149.061 13.0607C149.646 12.4749 149.646 11.5251 149.061 10.9393L139.515 1.3934C138.929 0.807611 137.979 0.807611 137.393 1.3934C136.808 1.97919 136.808 2.92893 137.393 3.51472L145.879 12L137.393 20.4853C136.808 21.0711 136.808 22.0208 137.393 22.6066C137.979 23.1924 138.929 23.1924 139.515 22.6066L149.061 13.0607ZM0 13.5H148V10.5H0V13.5Z"
+                                            fill="#F9C74F"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Side Text */}
+                        <div className="max-w-md text-sm text-gray-600 leading-relaxed">
+                            Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin
+                            gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet
+                            eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus
+                            vitae.
+                        </div>
+                    </div>
+
+                    {/* Main Announcement Card */}
+                    <div className="bg-gradient-to-r from-orange-400 to-yellow-400 rounded-3xl p-8 shadow-lg relative">
+                        <div className="flex">
+                            {/* Left Content */}
+                            <div className="flex-1 pr-8">
+                                <div className="relative">
+                                    {/* Date positioned in top right of card */}
+                                    <div className="absolute top-0 right-0 text-black font-medium text-base bg-white px-2 py-2 rounded-lg">
+                                        15 MAR, 2025
+                                    </div>
+
+                                    <h2 className="text-3xl font-bold text-white leading-tight mb-6 pr-32">
+                                        DHAMMANJALI INDIA PRIVATE LIMITED - Your One-Stop Shopping Destination
+                                    </h2>
+
+                                    <div className="w-20 h-0.5 bg-white mb-6"></div>
+
+                                    <p className="text-white text-lg leading-relaxed max-w-lg">
+                                        Discover our diverse range of high-quality products including home appliances, gift items, kitchen
+                                        utensils, stationery, and more. Visit us today for a convenient shopping experience at competitive
+                                        prices!
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Right Image */}
+                            <div className="w-96 flex-shrink-0">
+                                <div className="rounded-2xl overflow-hidden shadow-xl h-64">
+                                    <img
+                                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kL5UpqHWIC6PchncocAG6HzQqoIDg7.png"
+                                        alt="Street view with Dhammanjali announcement banner"
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section className="min-h-screen p-4 md:p-8">
+                <div className="max-w-7xl mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                        {cards.map((card, index) => (
+                            <div
+                                key={index}
+                                className="bg-[radial-gradient(circle,_#EDDC9C,_#FF9D00)] rounded-3xl p-6 md:p-8 flex flex-col items-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300 h-full"
+                            >
+                                {/* Circular Image Container */}
+                                <div className="w-32 h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden mb-6 shadow-lg ring-4 ring-white/20">
+                                    <img src={card.image || "/placeholder.svg"} alt={card.alt} className="w-full h-full object-cover" />
+                                </div>
+
+                                {/* Foundation Name */}
+                                <h2 className="text-white font-bold text-lg md:text-xl mb-2 tracking-wide">DHAMMANJALI</h2>
+                                <h3 className="text-white font-semibold text-base md:text-lg mb-4">FOUNDATION</h3>
+
+                                {/* Date */}
+                                <p className="text-white/90 text-sm mb-4 font-medium">15 MAR 2025</p>
+
+                                {/* Title/Description */}
+                                <div className="flex-1 flex items-center">
+                                    <h4 className="text-white font-semibold text-sm md:text-base leading-relaxed">{card.title}</h4>
+                                </div>
+
+                                {/* Read More Button */}
+                                <button className="bg-gradient-to-br from-[#F8D982] via-[#FF9D00] to-[#F8D982] text-black font-medium py-2 px-4 rounded-full transition-colors duration-200 text-sm md:text-base shadow-md hover:shadow-lg mt-4">
+                                    READ MORE
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section className="w-full max-w-7xl mx-auto p-4">
+                <div className="relative overflow-hidden rounded-full h-64 md:h-40 lg:h-64">
+                    {/* Background image */}
+                    <div
+                        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                        style={{
+                            backgroundImage: "url('/agm-background.png')",
+                        }}
+                    ></div>
+
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-orange-400/70 via-yellow-300/60 to-green-400/70"></div>
+
+                    {/* Additional overlay for better text readability */}
+                    <div className="absolute inset-0 bg-black/10"></div>
+
+                    {/* Content */}
+                    <div className="relative z-10 h-full flex flex-col justify-between">
+                        {/* Date in top right */}
+                        <div className="flex justify-end p-6 md:p-8 lg:p-10">
+                            <span className="text-white text-sm md:text-base lg:text-lg font-medium">25 Mar 2025</span>
+                        </div>
+
+                        {/* Main content - centered vertically */}
+                        <div className="flex-1 flex items-center justify-center px-6 md:px-8 lg:px-10 -mt-8 md:-mt-10">
+                            <div className="text-center space-y-2 md:space-y-3 lg:space-y-4">
+                                <h1 className="text-white text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
+                                    Key Highlights from AGM –
+                                </h1>
+                                <p className="text-white/95 text-lg md:text-xl lg:text-2xl xl:text-3xl font-light">
+                                    Perspective for Investors
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Bottom section with chevron */}
+                        <div className="flex justify-center pb-6 md:pb-8 lg:pb-10">
+                            <div className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 bg-gray-600/90 rounded-full flex items-center justify-center shadow-lg backdrop-blur-sm">
+                                <svg
+                                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
         </>
     )
